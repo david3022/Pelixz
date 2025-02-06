@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Peliculas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/nuevo-favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="menu container">
+            <!-- <a href="#" class="logo"><img src="images/logo.svg" alt="logo"></a> -->
+            <div class="david">
+                <!-- <h1>Hecho por David Fajardo</h1> -->
+            </div>
+
+            <!-- <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo netflix-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Max_logo.svg/1200px-Max_logo.svg.png" alt="Max Logo" class="logo max-logo">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png" alt="Prime Video Logo" class="logo prime-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/2560px-Disney%2B_logo.svg.png" alt="Disney+ Logo" class="logo disney-logo">
+              </div> -->
+
+            <div class="logo-container">
+                <div class="netflix">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                        alt="Netflix Logo" class="logo netflix-logo">
+                </div>
+                <div class="others">
+
+
+                    <img src="https://logos-world.net/wp-content/uploads/2022/02/max-Logo-500x281.png"
+                        alt="HBO Max Logo" class="logo max-logo">
+                    <span class="plus-sign">+</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png"
+                        alt="Prime Video Logo" class="logo prime-logo">
+                    <span class="plus-sign">+</span>
+                    <img src="https://cdn.worldvectorlogo.com/logos/disney-wbackground.svg" alt="Disney+ Logo"
+                        class="logo disney-logo">
+                </div>
+            </div>
+
+
+
+
+
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" alt="">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Bievenido</a></li>
+                    <li><a href="#loop">Plataformas</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="https://wa.me/584142282505?text=Hola%20quiero%20contratar%20un%20servicio%20por%20favor">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+
+
+        <!-- <div class="header-content container">
+
+            <div class="swiper mySwiper-1 container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slider1.jpg" class="slider">
+                    </div>
+                    <div clas="swiper-slide">
+                        <img src="images/slider2.jpg" class="slider">
+                    </div>
+                    <div clas="swiper-slide">
+                        <img src="images/slider3.jpg" class="slider">
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <a href="#" class="enlace">Para más información</a>
+        </div> -->
+
+
+
+        <div class="header-content ">
+            <div class="swiper mySwiper-1 ">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slider1.jpg" class="slider">
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider2.jpg" class="slider">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider3.jpg" class="slider">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <!-- <a href="#" class="enlace">Para más información</a> -->
+        </div>
+
+
+
+
+
+
+    </header>
+
+    <a href="https://wa.me/584142282505?text=Hola%20quiero%20contratar%20un%20servicio%20por%20favor" target="_blank" class="whatsapp-button" aria-label="Contactar por WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z" />
+        </svg>
+    </a>
+
+    <section class="bee">
+        <div class="swiper mySwiper-2 container">
+            <div class="product">
+                <h3 class="title">Recomendados</h3>
+                <!-- <img class="hoja" src="images/hoja.png" alt=""> -->
+            </div>
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="https://i.ytimg.com/vi/gDQOWB6J5HI/maxresdefault.jpg" alt="">
+                    
+                          
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/n.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/jdc.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/breakingbad.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/leo.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/b1.png" alt="">
+                            <div class="product-txt">
+                                <h4>Elysium</h4>
+                                <p>calidad premium 800ml</p>
+                                <span class="price">$80.00</span>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+
+
+
+
+    <section class="nosotros">
+        <div class="nosotros-txt container">
+            <h3>Ve tus peliculas</h3>
+            <p>favoritas <span> desde Venezuela </span></p>
+        </div>
+        <!-- <div class="pagos">
+            <h2>Realiza tu pago en bs</h2>
+        </div> -->
+
+        <div class="info container">
+            <a href="https://wa.me/584142282505?text=Hola%20quiero%20contratar%20un%20servicio%20por%20favor" class="enlace">Contáctanos</a>
+        </div>
+    </section>
+
+
+
+    <!-- <main class="product-menu">
+        <div class="container">
+            <div class="product">
+                <h2 class="title"></h2>
+                
+            </div>
+
+            <div id="menu-nav" class="menu-nav">
+
+                <div id="pro1" class="tab active">Netflix</div>
+                <div id="pro2" class="tab">Prime</div>
+                <div id="pro3" class="tab ">Max </div>
+                <div id="pro4" class="tab ">Disney+ </div>
+
+            </div>
+
+
+            <div class="pro1 tab-content">
+                <div class="box-container-1">
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/sac.jpg" alt="">
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/squid.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/witcher.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/dw.jpg" alt="">
+                        </div>
+
+                        
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/ss.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/au.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/carryon.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/uea.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/lvg.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/dda.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/jdr.png" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="images/bhc.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+
+
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-1">Cargar mas</div>
+                </center>
+
+
+
+
+            </div>
+
+
+            <div class="pro2 tab-content">
+                <div class="box-container-2">
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/jack.jpg" alt="">
+                        </div>
+
+                      
+                    </div>
+
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/rs.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/sits.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/ne.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/nemesis.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/lidt.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/ci.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/unat.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="images/lpc.jpg" alt="">
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <center>
+                    <div class="load-more" id="load-more-2">Cargar mas</div>
+                </center>
+
+
+
+            </div>
+
+
+
+
+            <div class="pro3 tab-content">
+                <div class="box-container-3">
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/lhdcl.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/m3.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/friends.png" alt="">
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/dune.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/open.jpg" alt="">
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/m4.jpg" alt="">
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/rickandmorty.png" alt="">
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/vdn.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/bm.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/dog.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/sully.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="images/lge.jpg" alt="">
+                        </div>
+
+                        
+
+                    </div>
+
+
+
+                </div>
+
+                <center>
+                    <div class="load-more" id="load-more-3">Cargar mas</div>
+                </center>
+
+            </div>
+
+
+            <div class="pro4 tab-content">
+                <div class="box-container-4">
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/m01.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/deadpool.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/ironman.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/simpsons.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/m6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="images/m7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-4">Cargar mas</div>
+                </center>
+            </div>
+
+            
+
+
+
+
+
+        </div>
+    </main> -->
+
+
+    <!-- 
+    ------------------------Loop----------------- -->
+
+    
+   
+
+
+    <section class="loop" id="loop">
+
+        <h3>Selecciona tu plataforma</h3>
+        <div class="secciones">
+
+          <button onclick="showCarousel(1)"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo" class="logo netflix-logo"></button>
+          <button onclick="showCarousel(2)"><img src="https://logos-world.net/wp-content/uploads/2022/02/max-Logo-500x281.png"
+    alt="HBO Max Logo" class="logo max-logo"></button>
+          <button onclick="showCarousel(3)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amazon_Prime_Video_logo.svg/2560px-Amazon_Prime_Video_logo.svg.png"
+            alt="Prime Video Logo" class="logo prime-logo"></button>
+          <button onclick="showCarousel(4)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/640px-Disney%2B_logo.svg.png" alt="paramount Logo"
+            class="logo disney-logo"></button>
+          <button onclick="showCarousel(5)"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Paramount_Plus.svg" alt="Disney+ Logo"
+            class="logo paramount-logo"></button>
+          <button onclick="showCarousel(6)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Crunchyroll.svg/2560px-Crunchyroll.svg.png" alt="crunch+ Logo"
+            class="logo crunch-logo"></button>
+        </div>
+      
+        <!-- <h2 id="title-1">Netflix</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-1">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- <h2 id="title-2">Max</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-2">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track2">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- <h2 id="title-3">Prime Video</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-3">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track3">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- <h2 id="title-4">Disney+</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-4">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track4">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- <h2 id="title-5">Paramount</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-5">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track5">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+      
+        <!-- <h2 id="title-6">Crunchyroll</h2> -->
+        <div class="custom-carousel-container custom-carousel-container-6">
+          <div class="custom-carousel">
+            <div class="custom-carousel-track6">
+              <!-- Cards will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+    <!-- 
+    ------------------------Loop----------------- -->
+
+
+
+
+
+
+    <section class="precios"  id="precios">
+        <h3>Precios</h3>
+        <div class="view">
+           
+            <div class="block netflix2">Netflix 3,5$</div>
+            <div class="block2 prime">Prime Video 2,5$</div>
+            <div class="block max">Max 2$</div>
+            <div class="block2 disney">Disney+ 3$</div>
+            <div class="block paramount">Paramount 2$</div>
+            <div class="block2 crunchyroll">Crunchyroll 2$</div>
+            <div class="block spotify">Spotify 2$</div>
+            <!-- <div class="block2 spotify">Spotify</div> -->
+            <!-- <div class="block">Vix</div> -->
+
+
+            <!-- <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div> -->
+        </div>
+    </section>
+
+
+    <section class="bee">
+
+        <div class="swiper mySwiper-2 container">
+            <div class="product">
+                <h3 class="title">Para los más pequeños</h3>
+                <!-- <img class="hoja" src="images/hoja.png" alt=""> -->
+            </div>
+
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/b1.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/b2.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/b3.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/b4.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/b5.png" alt="">
+                        <div class="product-txt">
+                            <h4>Elysium</h4>
+                            <p>calidad premium 800ml</p>
+                            <span class="price">$80.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/b1.png" alt="">
+                            <div class="product-txt">
+                                <h4>Elysium</h4>
+                                <p>calidad premium 800ml</p>
+                                <span class="price">$80.00</span>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+
+  
+
+
+    <footer class="footer container">
+        <hr>
+        <div class="footer-txt">
+            <div class="cat">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="#">Bienvenido</a></li>
+                    <li><a href="#loop">Plataformas</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="https://wa.me/584142282505?text=Hola%20quiero%20contratar%20un%20servicio%20por%20favor">Contacto</a></li>
+               
+
+                </ul>
+                <div class="socials">
+                    <img src="images/s1.svg" alt="">
+                    <img src="images/s2.svg" alt="">
+                    <img src="images/s3.svg" alt="">
+                </div>
+
+                <p>Streaming</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="script.js"></script>
+</body>
+
+</html>
